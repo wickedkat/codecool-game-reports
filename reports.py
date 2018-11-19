@@ -73,7 +73,7 @@ def when_was_top_sold_fps(filename):
         if line [3] == "First-person shooter":
             fps_lines.append(line)
             fps_sells.append(float(line[1]))
-    if fps_lines = []:
+    if len(fps_lines) < 1:
         raise ValueError
     sorted_values = sorted(fps_sells)
     max_value = sorted_values[-1]
